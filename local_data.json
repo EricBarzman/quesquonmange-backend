@@ -1,0 +1,320 @@
+[
+{
+  "model": "dishes.dietaryregime",
+  "pk": 1,
+  "fields": {
+    "code": "VEGAN",
+    "label": "Vegan"
+  }
+},
+{
+  "model": "dishes.dietaryregime",
+  "pk": 2,
+  "fields": {
+    "code": "VEGETARIAN",
+    "label": "Végétarien"
+  }
+},
+{
+  "model": "dishes.dietaryregime",
+  "pk": 3,
+  "fields": {
+    "code": "PESCATARIAN",
+    "label": "Pescatarian"
+  }
+},
+{
+  "model": "dishes.dietaryregime",
+  "pk": 4,
+  "fields": {
+    "code": "OMNIVORE",
+    "label": "Omnivore"
+  }
+},
+{
+  "model": "dishes.mealmoment",
+  "pk": 1,
+  "fields": {
+    "label": "Petit-déjeuner"
+  }
+},
+{
+  "model": "dishes.mealmoment",
+  "pk": 2,
+  "fields": {
+    "label": "Déjeuner"
+  }
+},
+{
+  "model": "dishes.mealmoment",
+  "pk": 3,
+  "fields": {
+    "label": "Dîner"
+  }
+},
+{
+  "model": "dishes.mealmoment",
+  "pk": 4,
+  "fields": {
+    "label": "Brunch"
+  }
+},
+{
+  "model": "dishes.mealmoment",
+  "pk": 5,
+  "fields": {
+    "label": "Goûter"
+  }
+},
+{
+  "model": "dishes.season",
+  "pk": 1,
+  "fields": {
+    "label": "Printemps"
+  }
+},
+{
+  "model": "dishes.season",
+  "pk": 2,
+  "fields": {
+    "label": "Eté"
+  }
+},
+{
+  "model": "dishes.season",
+  "pk": 3,
+  "fields": {
+    "label": "Automne"
+  }
+},
+{
+  "model": "dishes.season",
+  "pk": 4,
+  "fields": {
+    "label": "Hiver"
+  }
+},
+{
+  "model": "dishes.color",
+  "pk": 1,
+  "fields": {
+    "label": "Rouge",
+    "hex_value": "#E53935"
+  }
+},
+{
+  "model": "dishes.color",
+  "pk": 2,
+  "fields": {
+    "label": "Jaune",
+    "hex_value": "#FDD835"
+  }
+},
+{
+  "model": "dishes.color",
+  "pk": 3,
+  "fields": {
+    "label": "Vert",
+    "hex_value": "#43A047"
+  }
+},
+{
+  "model": "dishes.color",
+  "pk": 4,
+  "fields": {
+    "label": "Bleu",
+    "hex_value": ""
+  }
+},
+{
+  "model": "dishes.occasion",
+  "pk": 1,
+  "fields": {
+    "label": "Seul"
+  }
+},
+{
+  "model": "dishes.occasion",
+  "pk": 2,
+  "fields": {
+    "label": "En famille"
+  }
+},
+{
+  "model": "dishes.occasion",
+  "pk": 3,
+  "fields": {
+    "label": "Apéro entre amis"
+  }
+},
+{
+  "model": "dishes.occasion",
+  "pk": 4,
+  "fields": {
+    "label": "Gros repas"
+  }
+},
+{
+  "model": "dishes.cuisine",
+  "pk": 1,
+  "fields": {
+    "label": "Méditerranéenne"
+  }
+},
+{
+  "model": "dishes.cuisine",
+  "pk": 2,
+  "fields": {
+    "label": "Italienne"
+  }
+},
+{
+  "model": "dishes.cuisine",
+  "pk": 3,
+  "fields": {
+    "label": "Normande"
+  }
+},
+{
+  "model": "dishes.cuisine",
+  "pk": 4,
+  "fields": {
+    "label": "Bretonne"
+  }
+},
+{
+  "model": "dishes.cuisine",
+  "pk": 5,
+  "fields": {
+    "label": "Nordique"
+  }
+},
+{
+  "model": "dishes.utensil",
+  "pk": 1,
+  "fields": {
+    "label": "Poêle"
+  }
+},
+{
+  "model": "dishes.utensil",
+  "pk": 2,
+  "fields": {
+    "label": "Casserole"
+  }
+},
+{
+  "model": "dishes.utensil",
+  "pk": 3,
+  "fields": {
+    "label": "Cocotte-minute"
+  }
+},
+{
+  "model": "dishes.utensil",
+  "pk": 4,
+  "fields": {
+    "label": "Rice-cooker"
+  }
+},
+{
+  "model": "dishes.ingredient",
+  "pk": 1,
+  "fields": {
+    "name": "Tomate",
+    "description": "",
+    "type_ingredient": "Vegetable"
+  }
+},
+{
+  "model": "dishes.ingredient",
+  "pk": 2,
+  "fields": {
+    "name": "Courgette",
+    "description": "",
+    "type_ingredient": "Vegetable"
+  }
+},
+{
+  "model": "dishes.ingredient",
+  "pk": 3,
+  "fields": {
+    "name": "Oignon",
+    "description": "",
+    "type_ingredient": "Vegetable"
+  }
+},
+{
+  "model": "dishes.ingredient",
+  "pk": 4,
+  "fields": {
+    "name": "Huile d'olive",
+    "description": "",
+    "type_ingredient": "Sauce"
+  }
+},
+{
+  "model": "dishes.dish",
+  "pk": 1,
+  "fields": {
+    "name": "Ratatouille",
+    "complexity": "MEDIUM",
+    "cooking": "COOKED",
+    "dish_type": "MAIN",
+    "cuisine": 1,
+    "dietary_regimes": [
+      1,
+      2
+    ],
+    "seasons": [
+      2
+    ],
+    "meal_moments": [
+      2,
+      3
+    ],
+    "occasions": [
+      1,
+      2,
+      4
+    ],
+    "colors": [
+      1,
+      2
+    ],
+    "utensils": [
+      1
+    ]
+  }
+},
+{
+  "model": "dishes.dishingredient",
+  "pk": 1,
+  "fields": {
+    "dish": 1,
+    "ingredient": 1,
+    "quantity": "3.00",
+    "unit": ""
+  }
+},
+{
+  "model": "dishes.dishingredient",
+  "pk": 2,
+  "fields": {
+    "dish": 1,
+    "ingredient": 2,
+    "quantity": "2.00",
+    "unit": ""
+  }
+},
+{
+  "model": "dishes.dishingredient",
+  "pk": 3,
+  "fields": {
+    "dish": 1,
+    "ingredient": 4,
+    "quantity": "3.00",
+    "unit": "cuillerées à soupe"
+  }
+}
+]
