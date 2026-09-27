@@ -1,4 +1,16 @@
+# Environment variables
+.env
+.env.*
+
+# Python
 .venv/
 __pycache__/
 *.py[cod]
-.env
+
+# Local databases
+db.sqlite
+db.sqlite3
+
+# Data exports and backups
+local_data.json
+local_backup.dump
